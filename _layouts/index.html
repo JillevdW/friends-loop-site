@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Macintosh SE - Friends loop</title>
+    <style>
+        .header {
+            display: flex;
+            width: 99vw;
+            box-sizing: border-box;
+            /* padding-left: 10rem;
+            padding-right: 10rem; */
+            justify-content: space-around;
+            align-items: center;
+        }
+        .title-container {
+            width: 50%;
+        }
+        .title {
+            object-fit: contain;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            width: 20%;
+        }
+        .image {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="title-container">
+            <img src="assets/macintosh.svg" class="title"></img>
+            <div style="display: flex; justify-content: space-around;">
+                <p>Episode {{ site.data.state.episode }}, Season {{ site.data.state.season }}. Looped the full series {{ site.data.state.watch_count }} times.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="assets/picture.png" class="image"></img>
+        </div>
+    </div>
+</div>
+</body>
+</html>
